@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Geometric Calculations</title>
+    <link rel="stylesheet" href="stylecalc.css">
+    <link rel="icon" href="logo.webp" type="image/jpg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo">
+        <h1 data-translate="area">Area Calculations</h1>
+        <div class="language-switch">
+            <a href="index.html" target="_self" class="home-link" data-translate="home">Home Page</a>
+        </div>
+    </header>
+    <section id="calculations">
+        <div id="area">
+            <h3 data-translate="area_title">Area Calculations</h3>
+            <form id="areaForm">
+                <label for="shape" data-translate="select_shape">Select Shape:</label>
+                <select id="shape" onchange="showAreaInputs()">
+                    <option value="" data-translate="select">--Select--</option>
+                    <option value="square" data-translate="square">Square</option>
+                    <option value="rectangle" data-translate="rectangle">Rectangle</option>
+                    <option value="triangle" data-translate="triangle">Triangle</option>
+                    <option value="circle" data-translate="circle">Circle</option>
+                </select>
+                <div id="areaInputs"></div>
+                <div class="button-group">
+                    <button type="button" onclick="calculateArea()" data-translate="calculate">Calculate Area</button>
+                    <button type="button" onclick="resetForm('areaForm', 'areaInputs', 'areaResult')" data-translate="reset">Reset Values</button>
+                </div>
+                <p id="areaResult"></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p data-translate="footer">&copy; 2025 Geometric Calculations. All rights reserved by Eng-Ahmed Eltamimy.</p>
+    </footer>
+</body>
+</html>

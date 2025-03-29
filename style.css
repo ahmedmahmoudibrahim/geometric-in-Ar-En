@@ -1,0 +1,288 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #823c5d; /* خلفية الصفحة الرئيسية */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    direction: ltr;
+}
+[dir="rtl"]body  {
+    direction: rtl; 
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #263843;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-container {
+    flex: 0 0 auto;
+}
+
+header .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+    flex-grow: 1;
+    color: #fff;
+}
+
+header .language-selector {
+    flex: 0 0 auto;
+}
+
+header select {
+    background-color: #632a25; /* طوبي فاتح */
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    width: 20vh;
+    text-align: center;
+}
+
+header select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Navigation Menu */
+nav {
+    background: #823c5d; /* لون القائمة */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* يجعل العناصر تنتقل للسطر التالي عند ضيق المساحة */
+    justify-content: center; /* يحاذي العناصر في المنتصف */
+    gap: 15px; /* فجوة بين العناصر */
+}
+
+nav ul.menu li {
+    padding: 10px 15px;
+    border: 2px solid transparent; /* حدود شفافة افتراضيًا */
+    border-radius: 25px; /* حواف مستديرة */
+    transition: all 0.3s ease; /* تأثير ناعم عند التحويم */
+}
+
+[dir="rtl"] nav ul.menu {
+    flex-direction: row-reverse; /* يجعل القائمة تبدأ من اليمين */
+}
+
+/*[dir="rtl"] .image-section img {
+    margin-left: auto;  يحاذي الصور إلى اليمين 
+} */
+
+nav ul.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul.menu li:hover {
+    background-color: #ffffff; 
+    border-color: #4a90e2; 
+}
+
+nav ul.menu li:hover a {
+    color: #4a90e2; 
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+[dir="rtl"] #content  {
+    direction: rtl; 
+}
+
+section {
+    background-color: #f9f9f9;
+    border: 2px solid #62a9f4;
+    border-radius: 15px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 20px;
+}
+
+section:hover {
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+section h2 {
+    color: #3010e6;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #252424;
+}
+
+section a {
+    color: #007BFF;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Image Section Below Navigation */
+.image-section {
+    display: flex;
+    flex-wrap: wrap; /* يجعل الصور تنتقل للسطر التالي عند ضيق المساحة */
+    justify-content: center; /* يحاذي الصور في المنتصف */
+    gap: 30px; /* فجوة بين الصور */
+    padding: 30px; /* زيادة الهوامش الداخلية */
+    background-color: #ffffff; /* خلفية بيضاء */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ظل لطيف */
+    min-height: 500px; /* ارتفاع الحد الأدنى للحاوية */
+}
+
+.image-section img {
+    width: 250px; /* عرض الصورة 100 بكسل */
+    height: 250px; /* ارتفاع الصورة 100 بكسل */
+    object-fit: cover; /* الحفاظ على نسبة العرض والارتفاع دون تشويه */
+    border-radius: 190px; /* حواف مستديرة */
+    transition: transform 0.3s ease; /* تأثير تكبير عند التحويم */
+}
+
+.image-section img:hover {
+    transform: scale(1.1); /* تكبير الصورة عند التحويم */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 8px 0;
+    background: #263843;
+    width: 100%;
+    margin-top: auto; /* يجعل الفوتر في أسفل الصفحة دائمًا */
+}
+footer p{
+    color: #ffffff;
+}
+
+/* Buttons */
+button {
+    background: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #357ac9;
+}
+
+/* Input Fields */
+input[type="number"] {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    outline: none;
+}
+.student-info {
+   
+    padding: 20px;
+    max-width: 600px;
+    
+}
+
+.student-info h3 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.student-info p {
+    color: #333;
+    line-height: 1.6;
+}
+
+#contact h2 {
+    color: #3010e6;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#contact textarea {
+    width: 90%;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    resize: none;
+    font-size: 18px;
+}
+
+#contact button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50%;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul.menu li {
+        margin: 5px 0; /* هوامش صغيرة عند ضيق المساحة */
+        padding: 8px 12px;
+    }
+
+    .image-section img {
+        width: 45%; /* زيادة عرض الصور على الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-section img {
+        width: 90%; /* جعل الصور تأخذ معظم العرض على الهواتف */
+    }
+}

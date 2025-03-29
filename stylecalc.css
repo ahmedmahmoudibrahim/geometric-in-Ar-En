@@ -1,0 +1,148 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+[dir="rtl"] header {
+    flex-direction: row-reverse;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* توسيط العناصر أفقياً */
+    text-align: center; /* توسيط النص */
+    background-color: #262a2d;
+    padding: 20px;
+}
+
+header img {
+    margin-right: 10px; 
+    max-width: 70px;/* مسافة بسيطة بين اللوجو والعنوان */
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0; /* إزالة المسافات الزائدة */
+    flex-grow: 1; /* لضمان تمركز النص */
+}
+
+h2, h3 {
+    text-align: center;
+    color: #2a4d69;
+}
+header .language-selector {
+    flex: 0 0 auto;
+}
+header select {
+    background-color: #83362f; /* طوبي فاتح */
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+header select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.home-link {
+    text-decoration: none; /* إزالة التسطير الافتراضي */
+    color: #fdfafa; /* لون النص */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+   
+}
+
+.home-link:hover {
+    color: #4eb374; /* تغيير لون النص عند التحويم */
+    text-decoration: underline; /* إضافة تسطير عند التحويم */
+}
+
+
+#calculations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    gap: 20px;
+    padding: 15vh;
+}
+
+#area, #perimeter, #volume {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 15px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#area:hover, #perimeter:hover, #volume:hover {
+    transform: scale(1.05);
+}
+
+label, select, input, button {
+    display: block;
+    width: 96%;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #101112;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    font-size: medium;
+}
+
+button {
+    background-color: #262a2d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+button:hover {
+    background-color: #2a4d69;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #262a2d;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+footer p{
+    color: #ffffff;
+}
+

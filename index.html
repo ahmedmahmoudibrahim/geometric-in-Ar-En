@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title1" data-translate="title1">Geometric Calculations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="all.jpg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="all.jpg" alt="Logo" class="logo">
+        </div>
+        <h1 id="title" data-translate="title">Geometric Calculations</h1>
+        <div class="language-selector">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option  disabled hidden selected> English / عربي </option>                
+                <option value="en" >English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+        
+                <li><a href="area.html" target="_parent" id="area" data-translate="area">Area Calculations</a></li>
+                <li><a href="perimeter.html" target="_parent" id="perimeter" data-translate="perimeter">Perimeter Calculations</a></li>
+                <li><a href="volume.html" target="_parent" id="volume" data-translate="volume">Volume Calculations</a></li>
+        
+            <li class="all"><a href="#vision-mission" id="vision-mission-title" data-translate="vision_mission">Vision & Mission</a></li>
+            <li class="all"><a href="#about" id="about-title" data-translate="about_dev">About the Developer</a></li>
+            <li class="all"><a href="#contact" id="contact-title" data-translate="contact_us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="image-section">
+        <img src="all.jpg" alt="Image 1">
+        <img src="logo.jpg" alt="Image 2">
+        <img src="logo.webp" alt="Image 3">
+    </div>
+    <div id="content">
+        <section id="vision-mission">
+            <h2 id="vision_mission_title" data-translate="vision_mission_title">Vision & Mission</h2><br>
+            <p id="vision-text" data-translate="vision_text"></p>
+        </section>
+        <section id="about">
+            <h2 id="about_title" data-translate="about_title">About the Developer</h2><br>
+            <div class="student-info">
+                <h3><strong id="personal-info" data-translate="personal_info">Personal Information</strong></h3>
+                <p><strong id="name-label" data-translate="name_label">Name: </strong> <span id="developer-name" data-translate="developer_name">Eng-Ahmed Mahmoud Ibrahim</span></p>
+                <p><strong id="university-label" data-translate="university_label">University: </strong> <span id="university" data-translate="university">Arab Open University</span></p>
+                <p><strong id="faculty-label" data-translate="faculty_label">Faculty: </strong> <span id="faculty" data-translate="faculty">Faculty of Computer Science and Information Technology</span></p>
+                <p><strong id="major-label" data-translate="major_label">Major: </strong> <span id="major" data-translate="major">Computer Science</span></p>
+                <p><strong id="specialization-label" data-translate="specialization_label">Specialization: </strong> <span id="specialization" data-translate="specialization">Software Engineering and Web Development</span></p>
+                <p><strong id="student-id-label" data-translate="student_id_label">Student ID: </strong> <span id="student-id">23510080</span></p>
+                <h3><strong id="project-details" data-translate="project_details">Project Details</strong></h3>
+                <p id="project-details-text" data-translate="project_details_text">This project is part of the <strong id="tma-assignment" data-translate="tma_assignment">TMA Assignment</strong> for the <strong id="course-name" data-translate="course_name">Web Development (TT284) course.</strong> </p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 id="contact_title" data-translate="contact_title">Contact Us</h2><br>
+            <p><strong id="email-label" data-translate="email">Email :  </strong> <a href="mailto:p.eng.a.ellatar@gmail.com">p.eng.a.ellatar@gmail.com</a></p>
+            <p><strong id="phone-label" data-translate="phone">Phone Number :  </strong> +20 0111 677 90 36</p>
+            <form action="mailto:p.eng.a.ellatar@gmail.com" method="post" enctype="text/plain">
+                <textarea name="message" rows="4" cols="50" placeholder="Write your message here..." required></textarea>
+                <br>
+                <button type="submit" id="send-button" data-translate="send_button">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p id="footer" data-translate="footer">&copy; 2025 Geometric Calculations. All rights reserved by Eng-Ahmed Eltamimy.</p>
+    </footer>
+</body>
+</html>

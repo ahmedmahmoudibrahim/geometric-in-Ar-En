@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Geometric Calculations</title>
+    <link rel="stylesheet" href="stylecalc.css">
+    <link rel="icon" href="logo.webp" type="image/jpg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+ 
+    <header>
+        <img src="logo.jpg" alt="Logo">
+        <h1 data-translate="volume">Volume Calculations</h1>
+        <div class="language-switch">
+            <a href="index.html" target="_self" class="home-link" data-translate="home">Home Page</a>
+        </div>
+    </header>
+    <section id="calculations">
+        <div id="volume">
+            <h3 data-translate="volume_title">Volume Calculations</h3>
+            <form id="volumeForm">
+                <label for="volumeShape" data-translate="select_shape">Select Shape:</label>
+                <select id="volumeShape" onchange="showVolumeInputs()">
+                    <option value="" data-translate="select">--Select--</option>
+                    <option value="cube" data-translate="cube">Cube</option>
+                </select>
+                <div id="volumeInputs"></div>
+                <div class="button-group">
+                    <button type="button" data-translate="calculate_volume" onclick="calculateVolume()">Calculate Volume</button>
+                    <button type="button" data-translate="reset" onclick="resetForm('volumeForm', 'volumeInputs', 'volumeResult')">Reset Values</button>
+                </div>
+                <p id="volumeResult"></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p data-translate="footer">&copy; 2025 Geometric Calculations. All rights reserved by Eng-Ahmed Eltamimy.</p>
+    </footer>
+</body>
+</html>
